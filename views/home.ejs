@@ -9,7 +9,7 @@
 
 <% let body = post.body %>
 <% let preview = body.substring(0, 100) %>
-<p><%= preview + "..." %></p>
+<p><%= preview + "..." %> <a href="/posts/<%= post.title %>">Read More</a></p>
 <% }) %>
 
 
