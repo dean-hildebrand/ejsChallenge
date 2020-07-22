@@ -49,21 +49,9 @@ app.get('/posts/:postName', function(req, res){
     let title = _.lowerCase(post.title)
     if(postName === title){
       res.render("post", {post: post})
-    } else {
-      console.log("Not a Match");
     }
   })
 })
-
-app.post('/posts/:postName', function(req, res){
-  console.log(req.body);
-  // res.render("post", {postTitle: req.body.title})
-})
-
-
-
-
-
 
 
 
